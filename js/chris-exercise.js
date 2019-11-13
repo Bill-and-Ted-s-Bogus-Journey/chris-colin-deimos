@@ -36,6 +36,22 @@ function xo(str) {
 
 // console.log(xo("sammy"));
 
+// Palindrome Descendant
+
+// Create a function that returns true if the number itself is a palindrome or any of its descendants down to 2 digits (a 1-digit number is trivially a palindrome).
+//
+// Examples
+// palindromedescendant(11211230) ➞ true
+// // 11211230 ➞ 2333 ➞ 56 ➞ 11
+//
+// palindromeDescendant(13001120) ➞ true
+// // 13001120 ➞ 4022 ➞ 44
+//
+// palindromeDescendant(23336014) ➞ true
+// // 23336014 ➞ 5665
+//
+// palindromeDescendant(11) ➞ true
+// Number itself is a palindrome.
 
 let numExample = 11211230;
 let numExample2 = 13001120;
@@ -56,6 +72,9 @@ let descendentOfNumber = (number) => {
 function palindromeDescendant(num){
     let result = false;
     resultingNumber = descendentOfNumber(num);
+    if(checkPalidrone(num)){
+        result = checkPalidrone(num);
+    }
     // console.log(resultingNumber);
     // console.log(checkPalidrone(resultingNumber));
     while(resultingNumber.toString().split("").length > 1){
@@ -63,7 +82,9 @@ function palindromeDescendant(num){
         resultingNumber = descendentOfNumber(resultingNumber);
         if(resultingNumber.toString().split("").length> 1){
             // console.log(checkPalidrone(resultingNumber));
-            result = checkPalidrone(resultingNumber);
+            if(checkPalidrone(resultingNumber)){
+                result = checkPalidrone(resultingNumber);
+            }
         }
     }
     return result;
@@ -76,7 +97,7 @@ function checkPalidrone(str){
 console.log(palindromeDescendant(numExample));
 console.log(palindromeDescendant(numExample2));
 console.log(palindromeDescendant(numExample3));
-console.log(palindromeDescendant(1122));
+console.log(palindromeDescendant(332233));
 
 
 
