@@ -11,3 +11,27 @@ function equal(a, b, c) {
 }
 
 console.log(equal(2, 3, 2));
+
+//Exercise #2
+
+function xo(str) {
+    str = str.toLowerCase();
+
+    let arrayOfCharacters = str.split("");
+
+    let countTheX = arrayOfCharacters.reduce( function( n, val ) {
+        return n + (val === 'x');
+    }, 0);
+
+    let countTheO = arrayOfCharacters.reduce( function( n, val ) {
+        return n + (val === 'o');
+    }, 0);
+
+    if ( countTheX === countTheO ) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(xo("sammy"));
