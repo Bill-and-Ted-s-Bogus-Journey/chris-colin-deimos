@@ -46,12 +46,28 @@ Source: https://edabit.com/challenge/RG5NJWDa7pZGFkhTA
 ----
 
 
-### 3. 
+### 3. Palindrome Descendant
+       
+       Create a function that returns true if the number itself is a palindrome or any of its descendants down to 2 digits (a 1-digit number is trivially a palindrome).
+       
+       Examples
+       palindromedescendant(11211230) ➞ true
+       // 11211230 ➞ 2333 ➞ 56 ➞ 11
+       
+       palindromeDescendant(13001120) ➞ true
+       // 13001120 ➞ 4022 ➞ 44
+       
+       palindromeDescendant(23336014) ➞ true
+       // 23336014 ➞ 5665
+       
+       palindromeDescendant(11) ➞ true
+       Number itself is a palindrome.
 
 
 
 ----
-Exercise done by: 
+Exercise done by: The Wild Stallions
+https://edabit.com/challenge/HXRsxLL6vBqJtKeQu
 ----
 
 
