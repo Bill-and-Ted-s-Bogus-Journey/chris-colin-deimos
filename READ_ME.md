@@ -66,7 +66,7 @@ Source: https://edabit.com/challenge/RG5NJWDa7pZGFkhTA
 
 
 ----
-Exercise done by: The Wild Stallions
+Exercise done by: Chris and Colin
 https://edabit.com/challenge/HXRsxLL6vBqJtKeQu
 ----
 
@@ -103,8 +103,15 @@ Source: https://edabit.com/challenge/
 
 
 
-### 3. 
+### 3. Create a function makeSuperPet() that takes in the pets array as input and returns a single pet object with the following shape...
+       
+       {
+           name: ALL_PET_NAMES_CONCATENATED_INTO_A_SINGLE_STRING,
+           age: THE_TOTAL_OF_ALL_PET_AGES,
+           breed: THE_FIRST_LETTERS_OF_ALL_PET_BREEDS_CONCATENATATED_INTO_A_SINGLE_STRING
+       }
 
 ----
-Exercise done by:
+Exercise done by: Chris and Colin
+Bonus Exercises for map filter and reduce
 ----

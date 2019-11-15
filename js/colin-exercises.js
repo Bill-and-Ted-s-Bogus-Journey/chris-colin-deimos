@@ -37,3 +37,44 @@ function hackerSpeak(str) {
 }
 
 console.log(hackerSpeak("javascript is cool"));
+
+//Exercise #3
+
+const pets = [
+    {
+        name: 'Bud',
+        age: 2,
+        breed: 'Pug'
+    },
+    {
+        name: 'Gabby',
+        age: 10,
+        breed: 'Retriever'
+    },
+    {
+        name: 'Fred',
+        age: 1,
+        breed: 'Lab'
+    },
+    {
+        name: 'Bowser',
+        age: 2,
+        breed: 'Pug'
+    }
+];
+const makeSuperPet = (petArray) => {
+    let superPet = {};
+    let superName = "";
+    let superAge = 0;
+    let superBreed = "";
+    petArray.forEach(function (pet) {
+        superName += pet.name[0];
+        superAge += pet.age;
+        superBreed += pet.breed[0];
+    });
+    superPet.name = superName;
+    superPet.age = superAge;
+    superPet.breed = superBreed;
+    return superPet;
+};
+console.log(makeSuperPet(pets));

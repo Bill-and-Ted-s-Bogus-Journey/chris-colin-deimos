@@ -54,6 +54,8 @@ let descendentOfNumber = (number) => {
     return parseInt(bucketArr.join(""));
 };
 
+//Exercise #3
+
 function palindromeDescendant(num){
     let result = false;
     resultingNumber = descendentOfNumber(num);
