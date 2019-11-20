@@ -10,7 +10,7 @@ function doubleLetters(word) {
     return result;
 }
 
-console.log(doubleLetters("maam"));
+console.log(`Week 1 Exercise 1: ${doubleLetters("maam")}`);
 
 
 //Exercise #2
@@ -36,7 +36,7 @@ function hackerSpeak(str) {
     return bucketArr.join('');
 }
 
-console.log(hackerSpeak("javascript is cool"));
+console.log(`Week 1 Exercise 2 ${hackerSpeak(`javascript is cool`)}`);
 
 //Exercise #3
 
@@ -77,4 +77,21 @@ const makeSuperPet = (petArray) => {
     superPet.breed = superBreed;
     return superPet;
 };
+console.log("Week 1 Exercise 3:");
 console.log(makeSuperPet(pets));
+
+
+// ----------Week 2------------
+
+// Exercise #1
+
+function arrayOfMultiples (num, length) {
+    let bucket = [];
+    for(let i = 1; i<=length;i++){
+        bucket.push(num * i);
+    }
+    return bucket;
+}
+
+console.log(`Week 2 Exercise 1: (3,5) ${arrayOfMultiples(3,5)} and (7,8) ${arrayOfMultiples(7,8)}`);
+document.getElementById("w2e1Result").innerText = `Week 2 Exercise 1 Results: (3,5) = ${arrayOfMultiples(3, 5)} and (7,8) = ${arrayOfMultiples(7, 8)}`;
