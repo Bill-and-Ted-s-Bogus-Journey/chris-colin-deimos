@@ -152,7 +152,7 @@ function decodeMorse(morseCode) {
                 .map(
                     el => ref[el]
                 ).join('')
-        ).join(' ');
+        ).join(' ').toUpperCase();
 }
 
 var decoded = decodeMorse("- .... .  -. .- -- .  .. ...  -.-. .... .-. .. ...");
