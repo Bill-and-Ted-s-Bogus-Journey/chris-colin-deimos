@@ -95,3 +95,17 @@ function arrayOfMultiples (num, length) {
 
 console.log(`Week 2 Exercise 1: (3,5) ${arrayOfMultiples(3,5)} and (7,8) ${arrayOfMultiples(7,8)}`);
 document.getElementById("w2e1Result").innerText = `Week 2 Exercise 1 Results: (3,5) = ${arrayOfMultiples(3, 5)} and (7,8) = ${arrayOfMultiples(7, 8)}`;
+
+//Week 2 Exercise 2:
+function changeEnough(change, amountDue) {
+    let changeValueArray = [.25, .10, .05, .01];
+    let totalInPocket = 0;
+    totalInPocket += changeValueArray[0]*change[0];
+    totalInPocket += changeValueArray[1]*change[1];
+    totalInPocket += changeValueArray[2]*change[2];
+    totalInPocket += changeValueArray[3]*change[3];
+    return totalInPocket >= amountDue;
+}
+
+console.log("Week 2 Exercise 2 test: changeEnough([1, 0, 5, 219], 19.99) result:" + changeEnough([1, 0, 5, 219], 19.99) +"---> Expected false");
+document.getElementById("w2e2Result").innerText = "\nWeek 2 Exercise 2 test: changeEnough([1, 0, 5, 219], 19.99) result:" + changeEnough([1, 0, 5, 219], 19.99) +"---> Expected false";
