@@ -115,3 +115,92 @@ Source: https://edabit.com/challenge/
 Exercise done by: Chris and Colin
 Bonus Exercises for map filter and reduce
 ----
+
+## Pod#2 Week#2
+
+### Chris' Week 2 Exercises
+
+### Function Factory
+Create a function that takes a "base number" as an argument. This function should return another function which takes a new argument, and returns the sum of the "base number" and the new argument.
+
+// Calling makePlusFunction(5) returns a new function that takes an input,
+// and returns the result when adding 5 to it.
+
+const plusFive = makePlusFunction(5)
+
+plusFive(2) ➞ 7
+
+plusFive(-8) ➞ -3
+
+// Calling makePlusFunction(10) returns a new function that takes an input,
+// and returns the result when adding 10 to it.
+
+const plusTen = makePlusFunction(10)
+
+plusTen(0) ➞ 10
+
+plusTen(188) ➞ 198
+
+plusFive(plusTen(0)) ➞ 15
+
+### Morse Code Decoded
+
+Create a function that takes a string (morse code) as an argument and return an unencrypted string.
+
+--Examples--
+
+decodeMorse(".... . .-.. .--.   -- .   -.-.--") ➞ "HELP ME !"
+
+decodeMorse("-.-. .... .- .-.. .-.. . -. --. .") ➞ "CHALLENGE"
+
+decodeMorse(". -.. .- -... -... .. -   -.-. .... .- .-.. .-.. . -. --. .") ➞ "EDABBIT CHALLENGE"
+
+
+## Paired Exercises Week 2
+
+### The Fiscal Code --Located in the paired exercises
+
+Each person in Italy has an unique identifying ID code issued by the national tax office after the birth registration: the Fiscal Code (Codice Fiscale). Check the Resources tab for more info on this.
+
+Given an object containing the personal data of a person (name, surname, gender and date of birth) return the 11 code characters as a string following these steps:
+
+Generate 3 capital letters from the surname, if it has:
+
+At least 3 consonants then the first three consonants are used. (Newman -> NWM).
+Less than 3 consonants then vowels will replace missing characters in the same order they appear (Fox -> FXO | Hope -> HPO).
+Less than three letters then "X" will take the third slot after the consonant and the vowel (Yu -> YUX).
+Generate 3 capital letters from the name, if it has:
+
+Exactly 3 consonants then consonants are used in the order they appear (Matt -> MTT).
+More than 3 consonants then first, third and fourth consonant are used (Samantha -> SNT | Thomas -> TMS).
+Less than 3 consonants then vowels will replace missing characters in the same order they appear (Bob -> BBO | Paula -> PLA).
+Less than three letters then "X" will take the the third slot after the consonant and the vowel (Al -> LAX).
+Generate 2 numbers, 1 letter and 2 numbers from date of birth and gender:
+
+Take the last two digits of the year of birth (1985 -> 85).
+Generate a letter corresponding to the month of birth (January -> A | December -> T) using the table for conversion included in the code.
+For males take the day of birth adding one zero at the start if is less than 10 (any 9th day -> 09 | any 20th day -> 20).
+For females take the day of birth and sum 40 to it (any 9th day -> 49 | any 20th day -> 60).
+
+--Examples--
+
+fiscalCode({
+  name: "Matt",
+  surname: "Edabit",
+  gender: "M",
+  dob: "1/1/1900"
+}) ➞ "DBTMTT00A01"
+
+fiscalCode({
+  name: "Helen",
+  surname: "Yu",
+  gender: "F",
+  dob: "1/12/1950"
+}) ➞ "YUXHLN50T41"
+
+fiscalCode({
+  name: "Mickey",
+  surname: "Mouse",
+  gender: "M",
+  dob: "16/1/1928"
+}) ➞ "MSOMKY28A16"
