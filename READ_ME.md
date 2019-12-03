@@ -204,3 +204,26 @@ fiscalCode({
   gender: "M",
   dob: "16/1/1928"
 }) ➞ "MSOMKY28A16"
+
+
+## Pod#2 Week#3
+
+### Chris' Week 3 Exercises
+
+
+
+
+
+
+
+
+
+
+
+### Colin's Week 3 Exercises
+
+
+
+
+
+### Paired projects Week 3 Exercises
