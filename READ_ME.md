@@ -210,6 +210,16 @@ fiscalCode({
 
 ### Chris' Week 3 Exercises
 
+###Exercise 1 Count The Evens In An Array (using Java) ~~ placed in the Java Repository
+
+
+Return the number of even ints in the given array. Note: the % "mod" operator computes the remainder, e.g. 5 % 2 is 1.
+
+
+countEvens([2, 1, 2, 3, 4]) → 3
+countEvens([2, 2, 0]) → 3
+countEvens([1, 3, 5]) → 0
+
 
 
 
@@ -227,3 +237,13 @@ fiscalCode({
 
 
 ### Paired projects Week 3 Exercises
+
+###Exercise #1 ~~ HIGHEST LOWEST NUMBER ~~  -placed in the Java Repository
+
+Return the Highest and Lowest Numbers
+Create a method that accepts a string of space separated numbers and returns the highest and lowest number (as a string).
+Examples
+highLow("1 2 3 4 5") ➞ "5 1"
+highLow("1 2 -3 4 5") ➞ "5 -3"
+highLow("1 9 3 4 -5") ➞ "9 -5"
+highLow("13") ➞ "13 13"
