@@ -220,6 +220,15 @@ countEvens([2, 1, 2, 3, 4]) → 3
 countEvens([2, 2, 0]) → 3
 countEvens([1, 3, 5]) → 0
 
+###Exercise 2 Return odds in an array
+
+returnOdds([2, 4, 5, 7, 9]) → 3
+returnOdds([2, 4, 5, 7]) → 2
+returnOdds([2, 4, 6]) → 0
+
+###Exercise 3 Take a users input and return every word and capitalize the first letter of each word of the string.
+
+hey how are you doing? → Hey How Are You Doing?
 
 
 
